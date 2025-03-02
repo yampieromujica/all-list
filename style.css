@@ -248,7 +248,7 @@ header {
   height: 485px;
   overflow: auto;
   background-image: url('check-square-fill.svg');
-  opacity: 0.2;
+  opacity: url 0.2;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
