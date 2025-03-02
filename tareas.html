@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yampiero Mujica">
+  <meta name="title" content="Lista de Tareas">
+  <meta name="description" content="Aplicación de multitareas práctica e intuitiva.">
+  <meta name="keywords" content="App, Web, productividad, compras, gym, tareas">
+  <meta name="theme-color" content="#">
+  <title>All Lists</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/yan-IA.jpg">
+  
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="icofont.min.css" />
+  <link rel="stylesheet" href="animate.min.css" />
+  <link rel="stylesheet" href="fuentes.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="loader.css" type="text/css" media="all" />
+
+  <script defer src="loader_page.js"></script>
+  <script defer src="tareas.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="tema.js"></script>
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+
+  <header class="py-5" id="listaDeTareas">
+    <nav class="nav" id="nav">
+      <span class="nav__btn icofont-navigation-menu text-white" id="navBtn"></span>
+      <ul class="nav__menu text-white list-style-none" id="navMenu">
+        <a href="index.html#inicio" class="nav__anchor"><li class="nav__item"><span class="icofont-home"></span> Inicio</li></a>
+
+        <a href="gym.html#rutina-de-gym" class="nav__anchor"><li class="nav__item"><span class="icofont-dumbbell"></span> Rutinas de Gym</li></a>
+        <a href="compras.html" class="nav__anchor"><li class="nav__item"><span class="icofont-cart-alt"></span> Lista de compras</li></a>
+        <a href="#listaDeTareas"class="nav__anchor"><li class="nav__item"><span class="icofont-tasks"></span> Lista de Tareas</li></a>
+        <li class="nav__item"><figure class="main__light">
+          <label for="tema">
+            <span class="icofont-sun-alt img__tema sun" title="Ajustar color del tema" id="sun"> <span class="texto__sun"> Tema Claro</span></span>
+            <span class="icofont-moon img__tema moon" id="moon" title="Ajustar color del tema"> Tema Oscuro</span>
+          </label>
+
+        </figure>
+          <input class="main__check" type="checkbox" name="tema" id="tema" /> </li>
+      </ul>
+    </nav>
+    <h1 class="titulo">lista de tareas <span class="icofont-paper"></span></h1>
+
+   
+<div id="loader" class="loader">
+  <div class="loadingio-spinner-spin-2by998twmg8">
+      <div class="ldio-yzaezf3dcmj">
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+</div>
+    
+  </header>
+
+  <main>
+    <section class="lista-compra">
+
+      <div class="contenedor">
+
+        <form class="form" id="form" action="" method="get" accept-charset="utf-8">
+
+          <div class="d-flex mt-2">
+
+            <input type="text" class="input py-1 px-2 me-2 w-100 placeholder-glow placeholder-lg" id="taskInput" placeholder="Agregar tarea">
+
+            <input type="submit" class="btn btn-success" id="addTaskButton" value="+">
+
+          </div>
+        </form>
+        <ul class="lista text-success mt-3" id="taskList">
+
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="modal__list" id="modal__list">
+      <div class="error__content bg-info">
+        <span class="icofont-error icofont-3x text-center text-danger"></span>
+        <p class="error text-center" id="mensajeError"></p>
+        <input type="button" name="btn__error" class="btn-primary btn__error" id="btnError" value="OK" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
