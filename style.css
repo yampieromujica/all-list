@@ -248,7 +248,7 @@ header {
   height: 485px;
   overflow: auto;
   background-image: url('allList.png');
-  opacity: url 0.2;
+  opacity: background-image 0.2;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
