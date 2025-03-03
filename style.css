@@ -247,7 +247,7 @@ header {
 .lista {
   height: 485px;
   overflow: auto;
-  background-image: url('check-square-fill.svg');
+  background-image: url('allList.png');
   opacity: url 0.2;
   background-size: contain;
   background-repeat: no-repeat;
