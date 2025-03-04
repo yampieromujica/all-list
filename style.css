@@ -57,7 +57,7 @@
 
 body {
   height: 100vh;
-  font-family:"hobo", helvetica, Sans-Serif;
+  font-family:"archivo-black", helvetica, Sans-Serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: 100%;
